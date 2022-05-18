@@ -1,3 +1,3 @@
 # Ejercicios_Python
 Ejemplos en Python
-> Aprendizaje ne Python desde lo mas basico
+> Aprendizaje en Python desde lo mas basico
