@@ -19,5 +19,5 @@ def advina_el_numero(x):
 
     print(f"!Felicitaciones adivinaste el numero {numero_aleatorio}")
 
-advina_el_numero(10)
+advina_el_numero(10);
 
