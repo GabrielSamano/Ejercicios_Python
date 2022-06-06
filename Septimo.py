@@ -36,3 +36,4 @@ print(newlis);
 #Ordenar las listas.
 gol.sort()
 print(gol)
+
