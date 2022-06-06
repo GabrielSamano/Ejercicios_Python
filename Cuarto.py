@@ -22,3 +22,4 @@ print(b[6:11]);
 b= "Manzana y Naranja"
 print(b[-12:-7]);
 
+
