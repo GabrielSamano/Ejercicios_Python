@@ -20,7 +20,7 @@ class MYiten:
         else:
             raise StopIteration
 
-myclass = MYiten()
+myclass = MYiter()
 Myiter = iter(myclass)
 
 for x in Myiter:
