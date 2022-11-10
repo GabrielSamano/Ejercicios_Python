@@ -1,10 +1,10 @@
 # Modificar los String.
 
-#Mayusculas
+# Convertir en Mayusculas
 a= "Hola Mundo"
 print(a.upper());
 
-#Minusculas
+# Convertir en Minusculas
 a= "HOLA Mundo"
 print(a.lower());
 
