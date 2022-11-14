@@ -48,4 +48,6 @@ root.insert(37)
 root.insert(40)
 root.insert(5)
 
+
 print(root.PreorderTraversal(root))
+
