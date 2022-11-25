@@ -52,6 +52,46 @@ def victoria(matriz):
         return True
     else:
         return False
+    
+    def movimiento_jugador():
+    while True:
+        posiciones=[1,2,3,4,5,6,7,8,9]
+        casilla=int(input("Seleccione una casilla: "))
+        if casilla not in posiciones:
+            print("Casilla no disponible")
+        else:
+            if matriz[matriz-1]==" ":
+                matriz[matriz-1]==humano
+                break
+            else:
+                print("Casilla no disponible")
+
+
+def movimiento_ordenador():
+    posiciones=[1,2,3,4,5,6,7,8,9]
+    casilla=9
+    parar=False
+
+    for i in posiciones:
+        copia=list(matriz)
+        if copia[i]==" ":
+            copia[i]=ordenador 
+            if victoria(copia)==True:
+                casilla=i
+
+    if casilla==9:
+        for j in posiciones:
+            if copia[i]==" ":
+                copia[i]=humano
+                if victoria(copia)==True:
+                    casilla=j
+
+    if casilla==9:
+        while(not parar):
+            casilla=random.randint(0,8)
+            if matriz[casilla]==" ":
+                parar=True
+    matriz[casilla]
 
     
 
