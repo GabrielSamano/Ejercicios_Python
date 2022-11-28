@@ -91,7 +91,7 @@ def movimiento_ordenador():
             casilla=random.randint(0,8)
             if matriz[casilla]==" ":
                 parar=True
-    matriz[casilla]
+    matriz[casilla]=ordenador
 
     
 
