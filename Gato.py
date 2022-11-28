@@ -13,14 +13,14 @@ def iniciar_juego():
             computadora = "O"
             break
         elif ficha == "O":
-            persona="O"
+            persona ="O"
             computadora="X"
             break
         else:
             print("Porfavor elige entre X/O")
 
 
-def tabla():
+def tabla(matriz):
     print("GAto")
     print()
     print("     |       |     ")
@@ -52,8 +52,8 @@ def victoria(matriz):
         return True
     else:
         return False
-    
-    def movimiento_jugador():
+
+def movimiento_jugador(matriz):
     while True:
         posiciones=[1,2,3,4,5,6,7,8,9]
         casilla=int(input("Seleccione una casilla: "))
@@ -61,28 +61,28 @@ def victoria(matriz):
             print("Casilla no disponible")
         else:
             if matriz[matriz-1]==" ":
-                matriz[matriz-1]==humano
+                matriz[matriz-1]==persona
                 break
             else:
                 print("Casilla no disponible")
 
 
 def movimiento_ordenador():
-    posiciones=[1,2,3,4,5,6,7,8,9]
+    posiciones=[0,2,3,4,5,6,7,8,]
     casilla=9
     parar=False
 
     for i in posiciones:
         copia=list(matriz)
         if copia[i]==" ":
-            copia[i]=ordenador 
+            copia[i]=computadora 
             if victoria(copia)==True:
                 casilla=i
 
     if casilla==9:
         for j in posiciones:
             if copia[i]==" ":
-                copia[i]=humano
+                copia[i]=persona
                 if victoria(copia)==True:
                     casilla=j
 
@@ -91,7 +91,49 @@ def movimiento_ordenador():
             casilla=random.randint(0,8)
             if matriz[casilla]==" ":
                 parar=True
-    matriz[casilla]=ordenador
+    matriz[casilla]=computadora 
+
+    while True:
+
+        matriz=[" "]*9
+        os.system("cls")
+        persona,computadora = iniciar_juego()
+        partida=True
+        ganador=0
+
+        while partida:
+            ganador=ganador+1
+            os.system("cls")
+            tabla()
+
+
+            if victoria(matriz):
+                if ganador%2==0:
+                    print("Gana el jugador")
+                    print("Acaba el juego")
+                    print("\n Reiniciando el juego")
+                    time.sleep(5)
+                    partida=False
+                else:
+                    print("Gana el ordenador")
+                    print("Acaba el juego")
+                    print("\n Reiniciando el juego")
+                    time.sleep(5)
+                    partida=False
+            elif empate(matriz):
+                print("Empate")
+                print("Acaba el juego")
+                print("\n Reiniciando el juego")
+                time.sleep(5)
+                partida=False
+            elif ganador%2==0:
+                print("EL ordenador esta pensando")
+                time.sleep(2)
+                movimiento_ordenador()
+            else:
+                movimiento_jugador()
+                print("jugador pensando")
+                time.sleep(2)
 
     
 
