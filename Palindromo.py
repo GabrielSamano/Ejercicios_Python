@@ -7,3 +7,6 @@ def isPal(num):
             return False
     return True
 
+#Ejemplo de un palindromo para ver si funciona 
+if (isPal(1000)):
+    print("Si es palindromo")
