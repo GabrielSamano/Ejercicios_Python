@@ -26,4 +26,12 @@ def Busqueda_Binaria(lista, objetivo, limiteSuperior=None, limiteInferior=None):
     else:
         return Busqueda_Binaria(lista, objetivo, punto_medio+1, limiteSuperior)
         
-         
+   if __name__ == '_main_':
+
+    tamaño = 10000
+    conjunto_inicial = set()
+
+    while len(conjunto_inicial)< tamaño:
+        conjunto_inicial.add(random.randint(-3*tamaño, 3*tamaño))
+
+    lista = sorted(list(conjunto_inicial))      
