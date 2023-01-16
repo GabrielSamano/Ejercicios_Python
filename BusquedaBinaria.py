@@ -22,4 +22,8 @@ def Busqueda_Binaria(lista, objetivo, limiteSuperior=None, limiteInferior=None):
     if lista[punto_medio] == objetivo:
         return punto_medio
     elif punto_medio < lista[punto_medio]:
-        return Busqueda_Binaria(lista, objetivo, ) 
+        return Busqueda_Binaria(lista, objetivo, limiteInferior, punto_medio-1)
+    else:
+        return Busqueda_Binaria(lista, objetivo, punto_medio+1, limiteSuperior)
+        
+         
