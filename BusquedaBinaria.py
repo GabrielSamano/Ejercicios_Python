@@ -43,3 +43,12 @@ for objetivo in lista_ordenada:
 fin = time.time()
 
 print(f"Busqueda al azar: {fin - inicio} segundos")
+
+inicio = time.time()
+for objetivo in lista_ordenada:
+    Busqueda_Binaria(lista_ordenada, objetivo)
+fin = time.time()
+
+print(f"Busqueda Binaria: {fin - inicio} segundos")
+
+
