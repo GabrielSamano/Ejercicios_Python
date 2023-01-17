@@ -36,7 +36,7 @@ if __name__ == '_main_':
 
     lista_ordenada = sorted(list(conjunto_inicial))
 
-
+# Determinando tiempo de busqueda al azar y binaria con datos random 
 inicio = time.time()
 for objetivo in lista_ordenada:
     Busqueda_azar(lista_ordenada, objetivo)
