@@ -36,7 +36,7 @@ if __name__ == '_main_':
 
     lista_ordenada = sorted(list(conjunto_inicial))
 
-# Determinando tiempo de busqueda al azar y binaria con datos random 
+# Determinando tiempo de busqueda al azar  
 inicio = time.time()
 for objetivo in lista_ordenada:
     Busqueda_azar(lista_ordenada, objetivo)
@@ -44,6 +44,7 @@ fin = time.time()
 
 print(f"Busqueda al azar: {fin - inicio} segundos")
 
+# Determinando el tiempo de busqueda binaria con numeros random
 inicio = time.time()
 for objetivo in lista_ordenada:
     Busqueda_Binaria(lista_ordenada, objetivo)
