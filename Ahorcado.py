@@ -3,3 +3,9 @@ palabra = "ahorcado"
 errores = 0
 progreso = []
 
+# Prueba con un ciclo for 
+
+for i in range(len(palabra)):
+    progreso.append("_ ")
+
+print(progreso)
