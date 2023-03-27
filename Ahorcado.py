@@ -67,4 +67,20 @@ while errores < 7:
         print("|    ")
         print("|____")
     break
+    
+print(' '.join(progreso))
+print("Letras usadas: ", letras_usadas)
+print("Elige una letra: ")
+letra = input()
+if letra in letras_usadas:
+    print("Esta letra ya la usaste..")
+else:
+    letras_usadas.append(letra)
+
+    hay_error = True
+    for i in range(len(palabra)):
+        if letra == palabra[i]:
+            progreso[i] = letra + " "
+            hay_error = False
+            
 
