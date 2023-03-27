@@ -66,6 +66,7 @@ while errores < 7:
         print("|  /\\")
         print("|    ")
         print("|____")
+        print("Perdiste")
     break
     
 print(' '.join(progreso))
