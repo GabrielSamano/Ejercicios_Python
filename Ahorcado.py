@@ -7,6 +7,12 @@ progreso = []
 
 for i in range(len(palabra)):
     progreso.append("_ ")
+  
+palabra_con_espacio = []
+for char in palabra:
+    palabra_con_espacio.append(char + " ")
+ 
+
 letras_usadas= []
 # Dibujando el ahorcado
 while errores < 7:
