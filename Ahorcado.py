@@ -89,6 +89,12 @@ else:
         if letra == palabra[i]:
             progreso[i] = letra + " "
             hay_error = False
-     if hay_error:
-       errores += 1
+    
+    if hay_error:
+        errores += 1
+
+    if palabra_con_espacio == progreso:
+        print(" " .join(progreso))
+        print("Ganaste")
+        break
 
