@@ -89,5 +89,6 @@ else:
         if letra == palabra[i]:
             progreso[i] = letra + " "
             hay_error = False
-            
+     if hay_error:
+       errores += 1
 
