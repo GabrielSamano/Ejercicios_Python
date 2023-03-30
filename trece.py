@@ -9,7 +9,7 @@ Myfunc()
 x= 5
 print(x)
 
-# Consulta Local en una funcion de una funcion.
+# Consulta Local de una funcion dentro de una funcion.
 
 def FirstFunc():
     x = 100
